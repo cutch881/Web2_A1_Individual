@@ -1,0 +1,231 @@
+
+/*---------------------------------------------Default Setup-----------------------------------------------------------------*/
+
+body {
+    padding: 25px;
+    background-color: black;
+    /*font-family: Cambria Math;*/
+    font-family: Rockwell;
+    justify-items: center;
+    min-width:1200px;
+}
+
+#headers, #companyList, #companyInfo, #companyQuote, #companyStockData, #chart, #infoPanel /*formats all divs inside view*/
+ {
+    background-color: #2196F3;
+    border-radius: 10px;
+    /*newly created divs also inherit this*/
+}
+
+
+/*---------------------------------------------Grid Setup Source: https://www.w3schools.com/css/css_grid.asp----------------------------------------------------------------------------------------------------------*/
+
+#headers {
+    grid-area: headers;
+    padding-left: 2%;
+    color: white;
+}
+
+
+
+#companyList {
+    grid-area: companyList;
+    height: 1200px;
+    overflow: scroll;
+    padding: 8px;
+}
+
+
+
+#companyInfo {
+    grid-area: companyInfo;
+    padding: 15px;
+}
+
+
+
+#companyQuote {
+    grid-area: companyQuote;
+    padding: 15px;
+
+}
+
+#companyStockData {
+    grid-area: companyStockData;
+    padding: 8px;
+}
+
+
+#chart {
+    grid-area: chart;
+    padding: 25px;
+    margin-top: -80px;
+    display:none;
+
+}
+
+
+
+#infoPanel {
+    grid-area: infoPanel;
+    padding: 15px;
+    margin-top: -80px;
+    display:none;
+}
+
+
+
+#view {
+    display: grid;
+    grid-template-areas: 'headers headers headers headers headers headers' 
+                         'companyList companyInfo companyInfo companyStockData companyStockData companyStockData' 
+                         'companyList companyInfo companyInfo companyStockData companyStockData companyStockData' 
+                         'companyList companyQuote companyQuote companyStockData companyStockData companyStockData' 
+                         'companyList companyQuote companyQuote companyStockData companyStockData companyStockData' 
+                         'chart chart chart chart chart infoPanel' 
+                         'chart chart chart chart chart infoPanel';
+    grid-column-gap: 20px;
+    grid-row-gap: 25px;
+}
+
+/*-------------------------------------------------------------Editing things instide grid elements-------------------------------------------------------------------------------------------------------------*/
+
+#headers #credits/*formats Cridts*/
+{
+    background-color: #FF5B5B;
+    float: right;
+    margin-top: -73px;
+    margin-right: 2%;
+    padding: 15px;
+    border-radius: 12px;
+    font-weight: bold;
+    border: 3px solid black;
+}
+
+#companyList #list 
+{
+    margin-left: -40px;
+}
+
+
+#list/*rmoves bulltes from company list*/
+{
+    list-style-type: none;
+}
+
+#myInput {
+    width: 98%;
+    height: 25px;
+}
+
+
+.titles/*formats all titles in each box*/
+{
+    font-weight: bold;
+    color: white;
+    font-size: 27px;
+    margin-left: 4px;
+}
+
+#companyInfo #content/* fromats all divs in company info*/
+ {
+    margin-top: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+
+#companyQuote #moneyInfo/* fromats all divs in company quote*/
+ {
+    margin-top: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+
+#companyInfo #content div , #companyQuote #moneyInfo div{
+    margin-top: 22px;
+}
+
+#description
+{
+    width:400px;
+}
+#tags,#week52Low 
+{
+    margin-bottom: 5px;
+}
+
+table /*adjusting table to fit into div*/
+{
+    width: 100%;
+    font-size: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+#companyStockData th,#companyStockData td /*formating rows and columns*/
+{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 7px;
+}
+
+
+th:hover
+{
+ background-color: yellow;
+}
+
+#chartView{
+     border: 3px solid black;
+     background-color: #c6c6c6;
+     border-radius: 10px;
+     padding:7px;
+     float:right;
+     display:none;
+}
+
+#myChart1
+{
+    background-color: white;
+}
+
+canvas
+{
+    
+     width:100% !important;
+     height:90% !important;
+     border-radius: 10px;
+}
+
+#monthDataInfo
+{
+    margin-top: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+#compD
+{
+    width:400px;
+}
+#monthDataInfo div
+{
+    margin-top:15px;
+}
+
+#monthDataInfo label
+{
+     border: 3px solid black;
+     background-color: #c6c6c6;
+     border-radius: 10px;
+     padding:7px;
+}
+

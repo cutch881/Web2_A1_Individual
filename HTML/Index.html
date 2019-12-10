@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Assignment1-3512</title>
+    <link rel="stylesheet" href="../CSS/Assignment1.css">
+    <script src="../JS/Assignment1.js"></script>
+    <script src ="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+</head>
+
+<body>
+
+    <div id="view">
+
+        <div id="headers">
+            <h1>COMP 3512 Assign1</h1>
+            <h3>Mark Carvalho</h3>
+            <label id="credits"> Credits </label>
+        </div>
+
+
+        <div id="companyList" autocomplete="off">
+            <!--<span class = "titles">Company List</span> <br>-->
+            <input type="text" id="myInput" placeholder="Search" autocomplete="off">
+            <ul id="list">
+            </ul>
+        </div>
+
+
+        <div id="companyInfo">
+            <span class="titles">Company Info</span> <br>
+            <div id = 'content'>
+            <div id="symbol"> <b>Symbol:</b>(to see info click on a company) </div>
+            <div id="companyName"> <b>Company Name:</b>(to see info click on a company) </div>
+            <div id="exchange"> <b>Exchange:</b>(to see info click on a company) </div>
+            <div id="industry"><b>Industry:</b>(to see info click on a company)</div>
+            <div id="description"><b>Description:</b>(to see info click on a company)</div>
+            <div id="ceo"><b>CEO:</b>(to see info click on a company)</div>
+            <div id="website"><b>Website:</b>(to see info click on a company)</div>
+            <div id="sector"><b>Sector:</b>(to see info click on a company)</div>
+            <div id="tags"><b>Tags:</b>(to see info click on a company)</div>
+            </div>
+        </div>
+
+
+        <div id="companyQuote">
+            <span class="titles">Company Quote</span> <br>
+            <div id = "moneyInfo">
+            <div id="open"> <b>Open Price:</b>(to see info click on a company)</div>
+            <div id="close"><b>Close Price:</b>(to see info click on a company)</div>
+            <div id="high"><b>High:</b>(to see info click on a company)</div>
+            <div id="low"><b>Low:</b>(to see info click on a company)</div>
+            <div id="week52High"><b>Week 52 High:</b>(to see info click on a company)</div>
+            <div id="week52Low"><b>Week 52 Low:</b>(to see info click on a company)</div>
+            </div>
+        </div>
+
+
+        <div id="companyStockData">
+            <span class="titles">Month Stock Data</span> <br>
+            <span><em>*To sort in acending order click on headers*</em> </span> <br>
+            <label id = "chartView">View Charts</label>
+            <table id="data">
+                <tr>
+                    <th>Date</th>
+                    <th>Open</th>
+                    <th>High</th>
+                    <th>Low</th>
+                    <th>Close</th>
+                    <th>Volume</th>
+                </tr>
+            </table>
+        </div>
+
+        <div id="chart">
+            <p><em>*Hover over points to see values*</em></p>
+             <canvas id="myChart1"></canvas><br>
+        </div>
+
+        <div id="infoPanel">
+            <span class="titles">Info Panel</span> <br>
+            
+        <div id = "monthDataInfo">
+            <div id="symb"></div>
+            <div> <div id="nameC"></div><br><label id ="speak1">Speak</label></div>
+            <div><div id="compD"></div><br><label id="speak2">Speak</label></div><br><br>
+            <div><em><u>Monthly Summary Data</u></em></div>
+            <div id = "minClose"></div>
+            <div id = "averageClose"></div>
+            <div id = "averageVolume"></div>
+            <div id = "totalVolume"></div><br>
+            <div></div><label id="closeButton">Close</label></div>
+        </div>
+           
+        </div>
+
+
+
+</body>
+
+</html>
